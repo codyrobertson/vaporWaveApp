@@ -1,0 +1,614 @@
+$light: #BCBEC3;
+$stable: #E9E5DA;
+$positive: #00007F;
+$calm: #2DB1FF;
+$balanced: #00FF05;
+$energized: #FCD800;
+$assertive: #FF00C8;
+$royal: #DA97E0;
+$dark: #000000;
+$link-color: $balanced;
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+@import "../www/lib/ionic/scss";
+.title {
+	color: red;
+}
+
+.impact {
+	font-family: Impact;
+}
+
+.mt-10 {
+	margin-top: 10px;
+}
+
+.center {
+	text-align: center;
+}
+
+* {
+	letter-spacing: 2px;
+}
+
+.icon-pre {
+	letter-spacing: 2px;
+}
+
+.comic {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.times {
+	font-family: "Times New Roman", Times, serif;
+}
+
+.s {
+	font-size: 8px !important;
+}
+
+.m {
+	font-size: 12px !important;
+}
+
+.caps {
+	letter-spacing: 3px !important;
+	text-transform: uppercase;
+}
+
+.l {
+	font-size: 30px !important;
+}
+
+.xl {
+	font-size: 60px !important;
+}
+
+button, .interwebApp-button3 {
+	background-color: #c0c0c0;
+	color: black !important;
+	border-top: 1px solid white;
+	border-left: 1px solid white;
+	border-bottom: 2px ridge black;
+	border-right: 2px ridge black;
+}
+
+img .inline {
+	display: inline;
+}
+
+button: active, .interwebApp-button3: active {
+	color: black !important;
+	background-color: #c0c0c0;
+	border-top: 2px groove black;
+	border-left: 2px groove black;
+	border-bottom: 2px ridge black;
+	border-right: 2px ridge black;
+}
+
+input[type="text"] {
+	border-top: 2px ridge black;
+	border-left: 2px ridge black;
+	border-bottom: 2px groove #FFFFFF;
+	border-right: 2px groove #FFFFFF;
+}
+
+input[type="text"]: : selection {
+	background-color: #000080;
+	color: #FFFFFF;
+}
+
+input[type="text"]: : -moz-selection {
+	background-color: #000080;
+	color: #FFFFFF;
+}
+
+body, html {
+	background-color: #008080;
+	margin: 0px;
+}
+
+#win_container {
+	position: absolute;
+	width: 100%;
+	/*height: 100%;
+	*/
+		top: 0px;
+	left: 0px;
+	/*background-color: red;
+	*/
+		z-index: 800;
+	overflow: hidden;
+}
+
+#win_overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	overflow: hidden;
+	z-index: 1000000;
+	background-image: url('images/overlay.png');
+	display: none;
+}
+
+.win_titlebar,
+.win_titb_text,
+.win_titb_icon,
+#win_wid_run_container,
+#win_wid_debug_container,
+#win_wid_winver_container,
+.win_wid_container,
+#win_taskbar,
+#win_start,
+.noselect {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.win_underline {
+	text-decoration: underline;
+}
+
+/* CSS file for WebKit/Blink compatibility, since the main CSS was written for Gecko (for future FxOS port) */
+
+/* GUI controls hacks */
+
+button {
+	border-bottom: 2px ridge #808080 !important;
+	border-right: 2px ridge #808080 !important;
+}
+
+button: active {
+	border-top: 2px groove #808080 !important;
+	border-left: 2px groove #808080 !important;
+	border-bottom: 2px ridge #808080 !important;
+	border-right: 2px ridge #808080 !important;
+}
+
+input {
+	border-top: 2px ridge #808080 !important;
+	border-left: 2px ridge #808080 !important;
+}
+
+/* disables the input "halo" in Chrome */
+textarea, input, button {
+	outline: none;
+}
+
+/* taskbar and start menu */
+
+.win_tb_button_active {
+	border-top: 2px groove #808080 !important;
+	border-left: 2px groove #808080 !important;
+}
+
+.win_tb_button_inactive,
+.win_tb_button_start {
+	border-top: 1px solid white !important;
+	border-left: 1px solid white !important;
+	border-bottom: 2px ridge #808080 !important;
+	border-right: 2px ridge #808080 !important;
+}
+
+#win_start_button, .win_start_button {
+	border-bottom: 2px ridge #808080;
+	border-right: 2px ridge #808080;
+}
+
+#win_start_button: active,.win_start_button: active {
+	border-top: 2px groove #808080 !important;
+	border-left: 2px groove #808080 !important;
+	border-bottom: 2px groove #FFFFFF !important;
+	border-right: 2px groove #FFFFFF !important;
+}
+
+.win_start_button_depressed {
+	border-top: 2px groove #808080 !important;
+	border-left: 2px groove #808080 !important;
+	border-bottom: 2px groove #FFFFFF !important;
+	border-right: 2px groove #FFFFFF !important;
+}
+
+#win_start {
+	border-right: 2px ridge #808080 !important;
+	border-bottom: 2px ridge #808080 !important;
+	border-top: 3px ridge white !important;
+	border-left: 3px ridge white !important;
+}
+
+/* Start Menu */
+#win_start {
+	position: fixed;
+	left: 3px;
+	bottom: 24px;
+	height: 226px;
+	width: 175px;
+	background-color: #C0C0C0;
+	border-right: 2px ridge black;
+	border-bottom: 2px ridge black;
+	border-top: 3px ridge white;
+	border-left: 3px ridge white;
+	display: none;
+	z-index: 99999;
+}
+
+.light-bg {
+	background: #BCBEC3 !important;
+}
+
+#win_start_banner, .win_start_banner {
+	width: 21px;
+	height: 100%;
+	position: relative;
+	background-color: #999999;
+}
+
+#win_start_banner_img {
+	position: absolute;
+	bottom: 0px;
+}
+
+#win_start_tli_cont {
+	position: absolute;
+	left: 21px;
+	top: 0px;
+	height: 100%;
+	width: 154px;
+}
+
+.win_start_toplevel_item {
+	width: 100%;
+	height: 32px;
+	position: relative;
+}
+
+.win_start_toplevel_item: hover {
+	background-color: #000099;
+	color: white;
+}
+
+.win_start_tliicon {
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+.mr-10 {
+	margin-left: 10px;
+}
+
+.win_start_tlitext {
+	font-family: "Microsoft Sans Serif";
+	font-size: inherit;
+	top: 8px;
+	cursor: default;
+}
+
+.win_start_divider {}
+.win_start_d1 {
+	width: 100%;
+	height: 1px;
+	background-color: #999999;
+}
+
+.win_start_d2 {
+	width: 100%;
+	height: 1px;
+	background-color: #FFFFFF;
+}
+
+blink, .blink {
+	-webkit-animation: blink 1s step-end infinite;
+	-moz-animation: blink 1s step-end infinite;
+	-o-animation: blink 1s step-end infinite;
+	animation: blink 1s step-end infinite;
+}
+
+@-webkit-keyframes blink {
+	67% {
+		opacity: 0;
+	}
+	
+}
+@-moz-keyframes blink {
+	67% {
+		opacity: 0}
+}
+@-o-keyframes blink {
+	67% {
+		opacity: 0}
+}
+@keyframes blink {
+	67% {
+		opacity: 0}
+}
+.bold {
+	font-weight: bolder;
+}
+
+.pt-10 {
+	padding-top: 10px;
+}
+
+.network-icon {
+	background-image: url('http: //www.iconwanted.com/downloads/ipapun/original-windows-95/png/24x24/icon-19.png');
+	height: 50px !important;
+	width: 50px !important;
+	color: transparent;
+}
+
+svg {
+	height: 20%;
+	width: auto;
+}
+
+#chain_st {
+	-webkit-animation: dash 1s infinite linear;
+	-moz-animation: dash 1s infinite linear;
+	-o-animation: dash 1s infinite linear;
+	animation: dash 1s infinite linear;
+}
+
+@-webkit-keyframes dash {
+	to {
+		stroke-dashoffset: -5;
+	}
+	
+}
+@-moz-keyframes dash {
+	to {
+		stroke-dashoffset: -5;
+	}
+	
+}
+@-o-keyframes dash {
+	to {
+		stroke-dashoffset: -5;
+	}
+	
+}
+@keyframes dash {
+	to {
+		stroke-dashoffset: -5;
+	}
+	
+}
+.mb-20 {
+	margin-bottom: 20px;
+}
+
+.marquee, cite {
+	overflow: hidden;
+	-webkit-animation: rightThenLeft 2.5s infinite alternate;
+}
+
+@-webkit-keyframes rightThenLeft {
+	0% {
+		margin-right: 50%;
+	}
+	
+	100% {
+		margin-left: 50%;
+	}
+	
+}
+.none {
+	display: none;
+}
+
+.bottom {
+	position: absolute;
+	bottom: 0px !important;
+}
+
+.chameleon {
+	color: inherit;
+	-webkit-animation: color 5.5s infinite;
+}
+
+@-webkit-keyframes color {
+	25% {
+		color: #FCD800;
+	}
+	
+	50% {
+		color: #008080;
+	}
+	
+	75% {
+		color: #FF00C8;
+	}
+	
+	100% {
+		color: #00FF05;
+	}
+	
+}
+.loading, loading {
+	font-size: inherit;
+}
+
+.what, what {
+	font-size: inherit;
+}
+
+.pt-10 {
+	padding-top: 10px;
+}
+
+.vape {
+	text-shadow: 1px 1px 5px rgba(0, 128, 128, 1);
+	font-family: Helvetica;
+}
+
+.loading: after, loading: after {
+	overflow: hidden;
+	display: inline-block;
+	vertical-align: bottom;
+	-webkit-animation: ellipsis steps(4,end) 900ms infinite;
+	animation: ellipsis steps(4,end) 900ms infinite;
+	content: "\2026";
+	/* ascii code for the ellipsis character */
+	  width: 0px;
+}
+
+.what: after, what: after {
+	overflow: hidden;
+	display: inline-block;
+	vertical-align: bottom;
+	-webkit-animation: ellipsis steps(4,end) 900ms infinite;
+	animation: ellipsis steps(4,end) 900ms infinite;
+	content: "?";
+	/* ascii code for the ellipsis character */
+	  width: 2px;
+}
+
+@keyframes ellipsis {
+	to {
+		width: 1.25em;
+	}
+	
+}
+@-webkit-keyframes ellipsis {
+	to {
+		width: 1.25em;
+	}
+	
+}
+.floating, float {
+	float: left;
+	-webkit-animation-name: Floatingx;
+	-webkit-animation-duration: 3s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease-in-out;
+	-moz-animation-name: Floating;
+	-moz-animation-duration: 3s;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-timing-function: ease-in-out;
+	margin-left: 30px;
+	margin-top: 5px;
+}
+
+float {
+	text-align: center !important;
+	display: block;
+	margin-left: 20px;
+}
+
+@-webkit-keyframes Floatingx {
+	from {
+		-webkit-transform: translate(0, 0px);
+	}
+	
+	65% {
+		-webkit-transform: translate(0, 15px);
+	}
+	
+	to {
+		-webkit-transform: translate(0, -0px);
+	}
+	
+}
+@-moz-keyframes Floating {
+	from {
+		-moz-transform: translate(0, 0px);
+	}
+	
+	65% {
+		-moz-transform: translate(0, 15px);
+	}
+	
+	to {
+		-moz-transform: translate(0, -0px);
+	}
+	
+}
+.scaling, scale {
+	float: left;
+	-webkit-animation-name: scalex;
+	-webkit-animation-duration: 3s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease-in-out;
+	-moz-animation-name: scale;
+	-moz-animation-duration: 3s;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-timing-function: ease-in-out;
+}
+
+.ants {
+	border-image: image-url('http: //www.chrisdanford.com/blog/wp-content/uploads/2014/04/ants2.gif') 8 repeat repeat !important;
+	-moz-border-image: image-url('http: //www.chrisdanford.com/blog/wp-content/uploads/2014/04/ants2.gif') 1 repeat repeat !important;
+	-webkit-border-image: image-url('http: //www.chrisdanford.com/blog/wp-content/uploads/2014/04/ants2.gif') 1 repeat repeat !important;
+}
+
+.zdex {
+	z-index: 5;
+}
+
+@-webkit-keyframes scalex {
+	from {
+		-webkit-transform: scale(0.9);
+	}
+	
+	65% {
+		-webkit-transform: scale(1.0);
+	}
+	
+	to {
+		-webkit-transform: scale(0.9);
+	}
+	
+}
+.white {
+	color: white;
+}
+
+@-moz-keyframes scale {
+	from {
+		-moz-transform: scale(0.9);
+	}
+	
+	65% {
+		-moz-transform: scale(1.0);
+	}
+	
+	to {
+		-moz-transform: scale(0.9);
+	}
+	
+}
+.invert {
+	-webkit-animation: invert 1s infinite;
+}
+
+@-webkit-keyframes invert {
+	67% {
+		filter: invert(100%);
+	}
+	
+}
+body.platform-ios {
+	font-family: 'Crimson Text', serif;
+}
+
+.ionic-body.platform-ios {
+	font-family: 'Crimson Text', serif;
+}
+
+body.platform-android {
+	font-family: Lora, serif;
+}
+
+.ionic-body.platform-android {
+	font-family: Lora, serif;
+}
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,.tab-item,input,button,select,textarea {
+	font-family: inherit;
+}
+

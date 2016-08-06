@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'Crimson Text';
+  font-weight: 400;
+  font-style: normal;
+  src: local('Crimson Text'),
+       local('Crimson-Text-regular'),
+       url('../fonts/Crimson-Text-regular/Crimson-Text-regular.woff2') format('woff2'),
+       url('../fonts/Crimson-Text-regular/Crimson-Text-regular.woff') format('woff'),
+       url('../fonts/Crimson-Text-regular/Crimson-Text-regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Crimson Text';
+  font-weight: 600;
+  font-style: normal;
+  src: local('Crimson Text Semibold'),
+       local('Crimson-Text-600'),
+       url('../fonts/Crimson-Text-600/Crimson-Text-600.woff2') format('woff2'),
+       url('../fonts/Crimson-Text-600/Crimson-Text-600.woff') format('woff'),
+       url('../fonts/Crimson-Text-600/Crimson-Text-600.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Crimson Text';
+  font-weight: 700;
+  font-style: normal;
+  src: local('Crimson Text Bold'),
+       local('Crimson-Text-700'),
+       url('../fonts/Crimson-Text-700/Crimson-Text-700.woff2') format('woff2'),
+       url('../fonts/Crimson-Text-700/Crimson-Text-700.woff') format('woff'),
+       url('../fonts/Crimson-Text-700/Crimson-Text-700.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Crimson Text';
+  font-weight: 400;
+  font-style: italic;
+  src: local('Crimson Text Italic'),
+       local('Crimson-Text-italic'),
+       url('../fonts/Crimson-Text-italic/Crimson-Text-italic.woff2') format('woff2'),
+       url('../fonts/Crimson-Text-italic/Crimson-Text-italic.woff') format('woff'),
+       url('../fonts/Crimson-Text-italic/Crimson-Text-italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Crimson Text';
+  font-weight: 600;
+  font-style: italic;
+  src: local('Crimson Text Semibold Italic'),
+       local('Crimson-Text-600italic'),
+       url('../fonts/Crimson-Text-600italic/Crimson-Text-600italic.woff2') format('woff2'),
+       url('../fonts/Crimson-Text-600italic/Crimson-Text-600italic.woff') format('woff'),
+       url('../fonts/Crimson-Text-600italic/Crimson-Text-600italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Crimson Text';
+  font-weight: 700;
+  font-style: italic;
+  src: local('Crimson Text Bold Italic'),
+       local('Crimson-Text-700italic'),
+       url('../fonts/Crimson-Text-700italic/Crimson-Text-700italic.woff2') format('woff2'),
+       url('../fonts/Crimson-Text-700italic/Crimson-Text-700italic.woff') format('woff'),
+       url('../fonts/Crimson-Text-700italic/Crimson-Text-700italic.ttf') format('truetype');
+}
+
